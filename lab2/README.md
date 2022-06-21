@@ -18,7 +18,7 @@
      lsblk
 2. modprobe ext4
 3. lsmod | grep ext4
-4. sudo mkfs.ext4 /dev/sdc
+4. sudo mkfs.ext4 /dev/sdb
 5. Скорость передачи разделов диска при копировании файлов
     sudo dd  if=/dev/zero of=/data/file1_2 bs =1G count=2 oflag=direct
 

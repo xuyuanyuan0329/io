@@ -23,11 +23,15 @@ sudo fdisk -l /dev/mydisk
 
 
 ## Инструкция пользователя
-
-1. write test program
-2. Read and write the 
-in the test program.
-3. gcc test.c; ./a.out
+1. Просмотр разделов диска  
+     sudo fdisk -l
+     sudo fdisk -l | grep /dev/
+     lsblk
+2. modprobe ext4
+3. lsmod | grep ext4
+4. sudo mkfs.ext4 /dev/sdb
+5. Скорость передачи разделов диска при копировании файлов
+    sudo dd  if=/dev/zero of=file1_2G bs =1G count=2 oflag=direct
 
 ## Примеры использования
 
